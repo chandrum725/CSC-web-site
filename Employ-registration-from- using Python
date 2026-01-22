@@ -1,0 +1,54 @@
+from Tkinter import *
+gva=Tk()
+gva.title("COMPANY")
+gva.geometry("400x500")
+a1=Label(gva,text="EMPLOYEE REGISTRATION
+FORM",fg='blue')
+a1.place(x=100,y=40)
+a2=Label(gva,text="NAME")
+a2.place(x=50,y=80)
+a3=Label(gva,text="AGE")
+a3.place(x=50,y=120)
+a4=Label(gva,text="GENDER")
+a4.place(x=50,y=160)
+a5=Label(gva,text="LOCATION")
+a5.place(x=50,y=200)
+a6=Label(gva,text="EMAIL")
+a6.place(x=50,y=240)
+a7=Label(gva,text="MOBILE NO.")
+a7.place(x=50,y=280)
+a8=Label(gva,text="VECHILE NO.")
+a8.place(x=50,y=320)
+e1=Entry(gva)
+e1.place(x=150,y=80)
+e2=Entry(gva)
+e2.place(x=150,y=120)
+e3=Entry(gva)
+e3.place(x=150,y=200)
+e4=Entry(gva)
+e4.place(x=150,y=240)
+e5=Entry(gva)
+e5.place(x=150,y=280)
+e6=Entry(gva)
+e6.place(x=150,y=320)
+def f():
+ if g.get()==1:
+ print("Male")
+if g.get()==2:
+ print("Female")
+ if g.get()==3:
+ print("Trans")
+g=IntVar()
+ag1=Radiobutton(gva,text="Male",variable=g,v
+alue=1)
+ag2=Radiobutton(gva,text="Female",variable=g
+,value=2) 
+ag3=Radiobutton(gva,text="Trans",variable=g,v
+alue=3)
+ag1.place(x=150,y=160)
+ag2.place(x=200,y=160)
+ag3.place(x=260,y=160)
+guru=Button(gva,text="SUBMIT",fg='white',bg='
+red',padx=5,pady=5,command=f)
+guru.place(x=150,y=400
+gva.mainloop()
